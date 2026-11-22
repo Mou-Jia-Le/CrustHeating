@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crustal-heating"
+version = "0.1.0"
+description = "Data and figure reproduction for crustal differentiation and radiogenic heating"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.26", "pandas>=2.2", "matplotlib>=3.8",
+  "scipy>=1.10", "pyMelt==2.3",
+]
+
+[project.scripts]
+crustal-heating = "crustal_heating.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

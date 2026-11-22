@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "k2o_slope_wt_per_km": 0.0423,
+  "k2o_intercept_wt": 0.17,
+  "filter": "47 <= SiO2 <= 72 wt%; single-pass external studentized residuals from log10 element vs log10 K2O OLS; two-sided Bonferroni alpha=0.05 per element; mask only the flagged element value; refit zero-intercept regression; no U concentration or Th/U ratio cutoff",
+  "dataset": "quaternary_arc_magmatism.csv",
+  "dataset_sha256": "b70066c6af2e8f8b3743f614945db621eceed26071c88bf8865c90bfd5373d3c",
+  "sample_count": 29811,
+  "rock_types": {
+    "VOL": 29634,
+    "PLU": 177
+  },
+  "fits": {
+    "Th": {
+      "slope": 3.312761993551358,
+      "standard_error": 0.016533494837017673,
+      "p_value": 0.0,
+      "r_squared_uncentered": 0.7283686365587101,
+      "n": 14973,
+      "n_valid_pairs": 14973
+    },
+    "U": {
+      "slope": 1.0155967877683127,
+      "standard_error": 0.005835620571074479,
+      "p_value": 0.0,
+      "r_squared_uncentered": 0.7276387029997251,
+      "n": 11338,
+      "n_valid_pairs": 11338
+    }
+  }
+}
